@@ -26,7 +26,8 @@
   --white: #fff;
   --gray: #777;
   --gray-dark: #333;
-  --primary: #EB6864;
+  /* --primary: #EB6864; */
+  --primary: #e22620;
   --secondary: #aaa;
   --success: #22B24C;
   --info: #369;
@@ -2620,17 +2621,32 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-.btn-primary {
+/* .btn-primary {
   color: #fff;
   background-color: #EB6864;
   border-color: #EB6864;
+} */
+
+.btn-primary {
+  color: #fff;
+  background-color: #e22620;
+  border-color: #e22620;
+  opacity: 0.5;
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   color: #fff;
   background-color: #e74742;
   border-color: #e53c37;
+} */
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #e22620;
+  border-color: #e22620;
+  opacity: 1.0;
 }
+
 
 .btn-primary:focus, .btn-primary.focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(238, 127, 123, 0.5);
@@ -5448,6 +5464,19 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 @media (min-width: 576px) {
   .jumbotron {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+.jumbotron_red {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #eee;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+  .jumbotron_red {
     padding: 1.5rem 1.5rem;
   }
 }

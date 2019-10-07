@@ -72,8 +72,9 @@
                 <a class="nav-link" href="#" id="projects-tab">PROJECTS</a>
               </li> -->
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="projects-tab" role="button" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="projects-tab" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
                   <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="#">PAPERS</a>
                     <a class="dropdown-item" href="#">HARDWARE</a>
                     <a class="dropdown-item" href="#">SOFTWARE</a>
                     <a class="dropdown-item" href="#">MECHANICAL</a>
@@ -302,7 +303,7 @@
     </div>
 
     <div class = "row">
-      <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 home-center" style = "padding-top:15px; padding-bottom:30px;">
+      <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 block-center" style = "padding-top:15px; padding-bottom:30px;">
           <p class = "home-text" style = "font-size:20px; text-align:center;">
               I'm a multidisciplinary engineer who loves hands-on prototyping, research, and development. I'm interested in improving quality of life through sensors, data analytics, and sensor-based feedback systems.
           </p>
@@ -310,7 +311,7 @@
               I have in-depth experience with designing experiments and test setups for data-driven development and optimization of hardware and sensors.  
           </p>
       </div>
-      <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 home-center" style = "padding-top:15px; padding-bottom:30px;">
+      <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 block-center" style = "padding-top:15px; padding-bottom:30px;">
           <img src="images/james.jpg" width = "50%" class = "home-image" alt="Head shot of James Stevick">
       </div>  
     </div>
@@ -371,27 +372,72 @@
 <!-- <div class = "col-2" style="text-align:center;"> -->
 
 <script id = "contact_page_html" type="text">
-  <div class="row">
-    <div class = "col"></div>
-    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
-      <h2 style = "font-size:45px; padding-bottom: 10px;">
-        James R. Stevick
-      </h2>
-      <h4 style="padding-top: 5px; padding-bottom: 5px;">
-        <a href = "mailto: jamesrstevick@gmail.com">jamesrstevick@gmail.com</a>
-      </h4>
-      <h4 style="padding-top: 5px; padding-bottom: 5px;"">
-        <a href="tel:510-501-7466">(510) 501 - 7466</a>
-      </h4>
-      <hr class="my-4">
-      <p style = "font-size:125%; text-align:center;">
-          M.S. Mechanical Engineering ’16 | University of Michigan
-          <br>
-          B.A. Physics & Economics ’15 | Claremont McKenna College
-      </p>
+  <div class = "container">
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 jumbotron">
+
+        <h2 style = "font-size:40px; padding-bottom: 35px; text-align: left;">
+            James R. Stevick
+        </h2>
+
+        <h5 style = "color: #e22620; text-align: left;">
+            EMAIL
+        </h5>
+        <h5 style="padding-top: 5px; padding-bottom: 30px; text-align: left;">
+          <a href = "mailto: jamesrstevick@gmail.com">jamesrstevick@gmail.com</a>
+        </h5>
+        <h5  style = "color: #e22620; text-align: left;">
+            TELEPHONE
+        </h5>
+        <h5 style="padding-top: 5px; padding-bottom: 30px; text-align: left;">
+          <a href="tel:510-501-7466">(510) 501 - 7466</a>
+        </h5>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="well well-sm jumbotron">
+              <form class="form-horizontal" action="send_form.php" method="post">
+                  <fieldset>              
+                      <!-- Name input-->
+                      <div class="form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                          <label class="control-label" for="name">Name</label>
+                          <input id="name" name="name" type="text" placeholder="Your Name" class="form-control">
+                        </div>
+                      </div>
+              
+                      <!-- Email input-->
+                      <div class="form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                          <label class="control-label" for="email">E-mail</label>
+                          <input id="email" name="email" type="text" placeholder="Your E-mail" class="form-control">
+                        </div>
+                      </div>
+              
+                      <!-- Message body -->
+                      <div class="form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                          <label class="control-label" for="message">Message</label>
+                          <textarea class="form-control" id="message" name="message" placeholder="Enter a message here..." rows="5"></textarea>
+                        </div>
+                      </div>
+              
+                      <!-- Form actions -->
+                      <div class="form-group">
+                        <div class="col-md-12 text-left">
+                          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                      </div>
+                  </fieldset>
+              </form>
+          </div>
+      </div>
+
     </div>
-    <div class = "col"></div>
-  </div>
+
+    <hr class="my-4">
+
 </script>
 
 
@@ -402,3 +448,12 @@
 
 
 
+<!-- <div class="row">
+
+    <p style = "font-size:125%; text-align:center;">
+        M.S. Mechanical Engineering ’16 | University of Michigan
+        <br>
+        B.A. Physics & Economics ’15 | Claremont McKenna College
+    </p>
+
+  </div> -->
