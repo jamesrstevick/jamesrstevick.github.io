@@ -397,7 +397,7 @@
 
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <div class="well well-sm jumbotron">
-              <form class="form-horizontal" action="send_form.php" method="post">
+              <form class="form-horizontal" action="https://formspree.io/jamesrstevick@gmail.com" method="post">
                   <fieldset>              
                       <!-- Name input-->
                       <div class="form-group">
@@ -411,7 +411,7 @@
                       <div class="form-group">
                         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                           <label class="control-label" for="email">E-mail</label>
-                          <input id="email" name="email" type="text" placeholder="Your E-mail" class="form-control">
+                          <input id="email" name="_replyto" type="email" placeholder="Your E-mail" class="form-control">
                         </div>
                       </div>
               
@@ -422,13 +422,20 @@
                           <textarea class="form-control" id="message" name="message" placeholder="Enter a message here..." rows="5"></textarea>
                         </div>
                       </div>
+
+                      <!-- Subject of Email -->
+                      <input type="hidden" name="_subject" value="Stevick Projects Message" />
               
+                      <!-- Honeypot for SPAM -->
+                      <input type="text" name="_gotcha" style="display:none" />
+
                       <!-- Form actions -->
                       <div class="form-group">
                         <div class="col-md-12 text-left">
                           <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                         </div>
                       </div>
+
                   </fieldset>
               </form>
           </div>
