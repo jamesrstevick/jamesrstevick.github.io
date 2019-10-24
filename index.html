@@ -65,7 +65,7 @@
         <nav>
           <ul class="nav nav-pills">
               <li class="nav-item">
-                <a class="nav-link" href="#" id="home-tab">ABOUT</a>
+                <a class="nav-link active" href="index.html" id="home-tab">ABOUT</a>
               </li>
               <div class="nav-divider"></div>
               <li class="nav-item dropdown">
@@ -86,327 +86,57 @@
               </li>
               <div class="nav-divider"></div>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="contact-tab">CONTACT</a>
+                <a class="nav-link" href="contact.html" id="contact-tab">CONTACT</a>
               </li>
             </ul>
         </nav>
       </div>
 
-
-      <!-- A navigation menu that selects different views -->
-      <!-- <div>
-          <ul class="nav nav-tabs">
-              <li role="" class="active"><a href="#" id="albums-tab" >Albums</a></li>
-              <li role=""><a href="#" id="photos-tab" >Photos</a></li>
-              <li role=""><a href="#" id="slideshow-tab" >Slideshow</a></li>
-          </ul>
-      </div> -->
-
       <!-- Add a line -->
       <hr class="my-4">
 
-      <!-- the content section is empty as we will fill it 
-            via javascript and templates -->
-      <div id="content"  class="container-fluid"  role="main" >
-      </div>
+      <!-- Home page html -->
+            <div class="container" id=home_page_html>
+              <div class="row" style = "padding-bottom: 30px;">
+                <div class="col">
+                  <h2 style = "font-size:45px;">
+                    James R. Stevick
+                  </h2>
+                </div>
+              </div>
+          
+              <div class = "row">
+                <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 block-center" style = "padding-top:15px; padding-bottom:30px;">
+                    <p class = "home-text" style = "font-size:20px;">
+                        I'm a multidisciplinary engineer who loves hands-on prototyping, research, and development. I'm interested in improving quality of life through sensors, data analytics, and sensor-based feedback systems.
+                    </p>
+                    <p class = "home-text" style = "font-size:20px;">
+                        I have in-depth experience with designing experiments and test setups for data-driven development and optimization of hardware and sensors.  
+                    </p>
+                </div>
+                <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 block-center" style = "padding-top:15px; padding-bottom:30px;">
+                    <img src="images/james.jpg" width = "50%" class = "home-image" alt="Head shot of James Stevick">
+                </div>  
+              </div>
+          
+              <hr class="my-2" style = "padding-bottom:20px;">
+          
+              <div class = "row">
+          
+                <div class = "col"></div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8" style="text-align:center;">
+                  <a class="btn btn-info btn-lg btn-info-inline" href="https://github.com/jamesrstevick" target="_blank" role="button">GitHub</a>
+                  <div class="button-divider"></div>
+                  <a class="btn btn-info btn-lg btn-info-inline" href="https://www.linkedin.com/in/jamesstevick" target="_blank" role="button">LinkedIn</a>
+                  <div class="button-divider"></div>
+                  <a class="btn btn-info btn-lg btn-info-inline" href="https://www.mak3pcb.com/" target="_blank" role="button">mak3pcb</a>
+                </div>
+                <div class = "col"></div>
+              </div>
+          
+            </div>
     </div> <!-- / container -->
 
-<!-- Here are our Templates -->
-
-<!-- this is the template for the albums view -->
-<!-- 
-    it displays the albums in a bootstrap grid format
-    with one item for each album (using the {{#each}} template expression. 
-    Each album is displayed with a thumbnail image, a name and 
-    the number of photos (using the {{photos.length}} template expression, see my lecture for more details)
--->
-<script id="albums-template" type="text/x-handlebars-template">
-  <div class="row">
-
-    {{#each albums}}
-    <div class="col-xs-12 col-md-3"> 
-        <div class="album-thumbnail"  data-id="{{@index}}">
-          <img class="crop-img" src="{{thumbnail}}" alt=""/> 
-            
-          <div class="caption">
-              <h4> {{name}} </h4>
-              <p>{{photos.length}} photos</p>
-          </div>
-         </div>
-    </div> <!-- / col -->
-
-    {{/each}}
-
-  </div> <!-- / row -->
-</script>
-
-<!-- this is the template for the photos view of a single album -->
-<!-- 
-    like albums view it uses a bootstrap grid format to display the photos in an album
-    
-    Each photos is displayed with anumbnail image, a name and 
-    a description
--->
-<script id="photos-template" type="text/x-handlebars-template">
-  <div class="row">
-    <!-- xs-12 : small display shows a single column (taking up 12 grid columns)-->
-    <!-- md-3 : medium and up displays use 3 grid columns per column -->
-
-    {{#each photos}}
-    <div class="col-xs-12 col-md-3"> 
-     <div class="photo-thumbnail"  data-id="{{@index}}">
-        <img class="crop-img" src="{{src}}" alt=""/> 
-         <div class="caption">
-            <h3> {{title}} </h3>
-            <p>{{description}}</p>
-         </div>
-      </div>
-       
-    </div> <!-- / col -->
-    {{/each}}
-
-  </div> <!-- / row -->
-</script>
-
-<!-- this is the template for the view a single photo -->
-<!-- 
-    It is displayed as a large image with title and description
--->
-<script id="photo-template" type="text/x-handlebars-template">
-  <div class="row">
-    <div class="col-xs-12 col-md-12"> 
-        <img class="large-img" src="{{src}}" alt=""/> 
-          
-        <div class="caption">
-            <h3>{{title}}</h3>
-            <p>{{description}}</p>
-        </div>
-      </div> <!-- / col -->
-
-  </div> <!-- / row -->
-</script>
-
-
-
-
-<!-- this is the template for the photos view of a single album -->
-<!-- 
-    like albums view it uses a bootstrap grid format to display the photos in an album
-    
-    Each photos is displayed with anumbnail image, a name and 
-    a description
--->
-<script id="projects-template" type="text/x-handlebars-template">
-  <div class="row">
-    <!-- xs-12 : extra small display shows a single column (taking up 12 grid columns)-->
-    <!-- sm-6 : small display shows 2 columns -->
-    <!-- md-4 : small display shows 3 columns -->
-    <!-- lg-3 : small display shows 4 columns -->
-    {{#each projects}}
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 jumbotron project-entry"> 
-      <div class="project-thumbnail"  data-id="{{@index}}">
-        <img class="project-image" src="{{thumbnail}}" alt=""/> 
-         <div>
-            <h3 class ="project-title">{{title}}</h3>
-            <p style = "text-align: center;">{{description}}</p>
-         </div>
-      </div>
-    </div> <!-- / col -->
-    {{/each}}
-
-  </div> <!-- / row -->
-</script>
-
-
-<!-- this is the template for the view a single photo -->
-<!-- It is displayed as a large image with title and description -->
-<script id="project-template" type="text/x-handlebars-template">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
-
-        <h1>{{title}}</h1>
-        <!-- <h5>[Typeset in LaTeX]</h5> -->
-        <br/><br/>
-        <iframe src="{{pdfFile}}" width="100%" height="300%"></iframe>
-        <!-- <p>This worked</p> -->
-        <!-- <embed src="{{pdfFile}}" type=”application/pdf” width=”100%” height=”100%”> -->
-      </div>
-  </div>
-</script>
-
-
-
-<!-- this is the template for the slideshow view of a single album -->
-<!-- 
-    It uses the carousel view, which is quite complex, see my lecture for details
--->
-<script id="slideshow-template" type="text/x-handlebars-template">
-  <div class="row">
-    <div class="col-md-6">
-
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-  
-       <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-
-          {{#each photos}}
-            <div class="item {{#if @first}}active{{/if}}">
-             <img class="carousel-img" src="{{src}}" alt=""/> 
-            <div class="carousel-caption">
-              Image caption
-            </div>
-          </div> <!-- / carousel item -->
-          {{/each}}
-
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-    </div> <!-- / carousel --> 
-  </div> <!-- / col -->
-</div> <!-- / row -->
-</script>
-
-
-<!-- Home Page HTML -->
-<script id = "home_page_html" type="text">
-  <div class="container" id=home_page_html>
-    <div class="row" style = "padding-bottom: 30px;">
-      <div class="col">
-        <h2 style = "font-size:45px;">
-          James R. Stevick
-        </h2>
-      </div>
-    </div>
-
-    <div class = "row">
-      <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 block-center" style = "padding-top:15px; padding-bottom:30px;">
-          <p class = "home-text" style = "font-size:20px;">
-              I'm a multidisciplinary engineer who loves hands-on prototyping, research, and development. I'm interested in improving quality of life through sensors, data analytics, and sensor-based feedback systems.
-          </p>
-          <p class = "home-text" style = "font-size:20px;">
-              I have in-depth experience with designing experiments and test setups for data-driven development and optimization of hardware and sensors.  
-          </p>
-      </div>
-      <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 block-center" style = "padding-top:15px; padding-bottom:30px;">
-          <img src="images/james.jpg" width = "50%" class = "home-image" alt="Head shot of James Stevick">
-      </div>  
-    </div>
-
-    <hr class="my-2" style = "padding-bottom:20px;">
-
-    <div class = "row">
-
-      <div class = "col"></div>
-      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8" style="text-align:center;">
-        <a class="btn btn-info btn-lg btn-info-inline" href="https://github.com/jamesrstevick" target="_blank" role="button">GitHub</a>
-        <div class="button-divider"></div>
-        <a class="btn btn-info btn-lg btn-info-inline" href="https://www.linkedin.com/in/jamesstevick" target="_blank" role="button">LinkedIn</a>
-        <div class="button-divider"></div>
-        <a class="btn btn-info btn-lg btn-info-inline" href="https://www.mak3pcb.com/" target="_blank" role="button">mak3pcb</a>
-      </div>
-      <div class = "col"></div>
-    </div>
-
-  </div>
-
-  </script>
-
-
-<!-- Contact Page HTML -->
-<script id = "contact_page_html" type="text">
-  <div class = "container">
-    <div class="row">
-
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 jumbotron">
-
-        <h2 style = "font-size:40px; padding-bottom: 35px; text-align: left;">
-            James R. Stevick
-        </h2>
-
-        <h5 style = "color: #e22620; text-align: left;">
-            EMAIL
-        </h5>
-        <h5 style="padding-top: 5px; padding-bottom: 30px; text-align: left;">
-          <a href = "mailto: jamesrstevick@gmail.com">jamesrstevick@gmail.com</a>
-        </h5>
-        <h5  style = "color: #e22620; text-align: left;">
-            TELEPHONE
-        </h5>
-        <h5 style="padding-top: 5px; padding-bottom: 30px; text-align: left;">
-          <a href="tel:510-501-7466">(510) 501 - 7466</a>
-        </h5>
-      </div>
-
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <div class="well well-sm jumbotron">
-              <form class="form-horizontal" action="https://formspree.io/jamesrstevick@gmail.com" method="post">
-                  <fieldset>              
-                      <!-- Name input-->
-                      <div class="form-group">
-                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                          <label class="control-label" for="name">Name</label>
-                          <input id="name" name="name" type="text" placeholder="Your Name" class="form-control">
-                        </div>
-                      </div>
-              
-                      <!-- Email input-->
-                      <div class="form-group">
-                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                          <label class="control-label" for="email">E-mail</label>
-                          <input id="email" name="_replyto" type="email" placeholder="Your E-mail" class="form-control">
-                        </div>
-                      </div>
-              
-                      <!-- Message body -->
-                      <div class="form-group">
-                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                          <label class="control-label" for="message">Message</label>
-                          <textarea class="form-control" id="message" name="message" placeholder="Enter a message here..." rows="5"></textarea>
-                        </div>
-                      </div>
-
-                      <!-- Subject of Email -->
-                      <input type="hidden" name="_subject" value="Stevick Projects Message" />
-              
-                      <!-- Honeypot for SPAM -->
-                      <input type="text" name="_gotcha" style="display:none" />
-
-                      <!-- Return to Home -->
-                      <input type="hidden" name="_next" value="index.html" />
-
-                      <!-- Form actions -->
-                      <div class="form-group">
-                        <div class="col-md-12 text-left">
-                          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                        </div>
-                      </div>
-
-                  </fieldset>
-              </form>
-          </div>
-      </div>
-
-    </div>
-
-    <hr class="my-4">
-</script>
 
 
   </body>
