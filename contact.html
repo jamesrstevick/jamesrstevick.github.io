@@ -28,18 +28,6 @@
       type="image/jpg" 
       href="favicon.JPG">
 
-    <!-- Styles -->
-    <style>
-        h1 {text-align:center;
-            font-size:50px;}
-        h2 {text-align:center;}
-        h3 {text-align:center;}
-        h4 {text-align:center;}
-        h5 {text-align:center;}
-    </style>
-  
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!-- [if lt IE 9]> -->
@@ -47,93 +35,87 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
     <!-- <![endif] -->
 
-
   </head>
+
   <body>
 
+    <!-- Entire body container -->
     <div class="container">
 
-      <br/>
+        <!-- page title -->
+        <div class="page-header">
+            <h1 class = "page-header web-title">Stevick Projects</h1>     
+        </div>   
 
-      <!-- page tile -->
-      <div class="page-header">
-        <h1 class = "page-header" style="padding-bottom:10px;">Stevick Projects</h1>
-      </div>    
+        <!-- Navigation Bar -->     
+        <div > 
+          <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" id="home-tab">ABOUT</a>
+                </li>
+                <div class="nav-divider"></div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
+                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                      <a class="dropdown-item" id="projects-tab" href="#">HARDWARE</a>
+                      <a class="dropdown-item" href="#">SOFTWARE</a>
+                      <a class="dropdown-item" href="#">MECHANICAL</a>
+                      <a class="dropdown-item" href="#">PAPERS</a>
+                      <a class="dropdown-item" href="#">DIY</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">ALL</a>
+                    </div>
+                </li>
+                <div class="nav-divider"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html" id="example-tab">RESUMÉ</a>
+                </li>
+                <div class="nav-divider"></div>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contact.html" id="contact-tab">CONTACT</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
 
-       <!-- Navigation Bar -->     
-      <div > 
-        <nav>
-          <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html" id="home-tab">ABOUT</a>
-              </li>
-              <div class="nav-divider"></div>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-                  <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-                    <a class="dropdown-item" id="projects-tab" href="#">HARDWARE</a>
-                    <a class="dropdown-item" href="#">SOFTWARE</a>
-                    <a class="dropdown-item" href="#">MECHANICAL</a>
-                    <a class="dropdown-item" href="#">PAPERS</a>
-                    <a class="dropdown-item" href="#">DIY</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">ALL</a>
-                  </div>
-              </li>
-              <div class="nav-divider"></div>
-              <li class="nav-item">
-                  <a class="nav-link" href="#" id="example-tab">RESUMÉ</a>
-              </li>
-              <div class="nav-divider"></div>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html" id="contact-tab">CONTACT</a>
-              </li>
-            </ul>
-        </nav>
-      </div>
+        <!-- Add a line -->
+        <hr class="my-4">
 
+        <!-- Contact page html -->
+        <div class = "container">
 
-      <!-- A navigation menu that selects different views -->
-      <!-- <div>
-          <ul class="nav nav-tabs">
-              <li role="" class="active"><a href="#" id="albums-tab" >Albums</a></li>
-              <li role=""><a href="#" id="photos-tab" >Photos</a></li>
-              <li role=""><a href="#" id="slideshow-tab" >Slideshow</a></li>
-          </ul>
-      </div> -->
-
-      <!-- Add a line -->
-      <hr class="my-4">
-
-      <!-- the content section is empty as we will fill it 
-            via javascript and templates -->
-            <div class = "container">
-              <div class="row">
-          
+            <div class="row">
+            
+                <!-- Contact Info -->
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 jumbotron">
-          
-                  <h2 style = "font-size:40px; padding-bottom: 35px; text-align: left;">
-                      James R. Stevick
-                  </h2>
-          
-                  <h5 style = "color: #e22620; text-align: left;">
-                      EMAIL
-                  </h5>
-                  <h5 style="padding-top: 5px; padding-bottom: 30px; text-align: left;">
-                    <a href = "mailto: jamesrstevick@gmail.com">jamesrstevick@gmail.com</a>
-                  </h5>
-                  <h5  style = "color: #e22620; text-align: left;">
-                      TELEPHONE
-                  </h5>
-                  <h5 style="padding-top: 5px; padding-bottom: 30px; text-align: left;">
-                    <a href="tel:510-501-7466">(510) 501 - 7466</a>
-                  </h5>
+                    <!-- My name -->
+                    <h2 class = "contact-my-name">
+                        James R. Stevick
+                    </h2>
+                    <!-- My email -->
+                    <h5 class = "contact-field">
+                        EMAIL
+                    </h5>
+                    <h5 class="contact-info">
+                      <a href = "mailto: jamesrstevick@gmail.com">jamesrstevick@gmail.com</a>
+                    </h5>
+                    <!-- My phone number -->
+                    <h5 class = "contact-field">
+                        TELEPHONE
+                    </h5>
+                    <h5 class="contact-info">
+                      <a href="tel:510-501-7466">(510) 501 - 7466</a>
+                    </h5>
                 </div>
-          
+
+                <!-- Contact Form (formspree) -->
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <!-- Jumbotron in separate div to create space between borders -->
                     <div class="well well-sm jumbotron">
                         <form class="form-horizontal" action="https://formspree.io/jamesrstevick@gmail.com" method="post">
-                            <fieldset>              
+                            <fieldset>        
+                                
                                 <!-- Name input-->
                                 <div class="form-group">
                                   <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
@@ -150,7 +132,7 @@
                                   </div>
                                 </div>
                         
-                                <!-- Message body -->
+                                <!-- Message input -->
                                 <div class="form-group">
                                   <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                                     <label class="control-label" for="message">Message</label>
@@ -173,32 +155,21 @@
                                     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                   </div>
                                 </div>
-          
+            
                             </fieldset>
                         </form>
                     </div>
                 </div>
-          
-              </div>
-          
-              <hr class="my-4">
-    </div> <!-- / container -->
+            
+            </div>
 
+        </div> <!-- / Container below menu -->
 
+        <!-- Add a line -->
+        <hr class="my-4">
+
+    </div> <!-- / Container of entire body -->
 
   </body>
 </html>
 
-
-
-
-
-<!-- <div class="row">
-
-    <p style = "font-size:125%; text-align:center;">
-        M.S. Mechanical Engineering ’16 | University of Michigan
-        <br>
-        B.A. Physics & Economics ’15 | Claremont McKenna College
-    </p>
-
-  </div> -->

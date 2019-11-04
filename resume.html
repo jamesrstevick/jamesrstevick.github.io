@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <!-- Meta data, CSS files, and JS files -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Stevick</title>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-3.4.1/bootstrap.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+    
+    <script src="js/Projects.js"> </script>
+    <script src="js/Albums.js"> </script>
+    <script src="js/gallery.js"> </script>
+
+    <!-- <link href="css/bootstrap-3.4.1/bootstrap.css" rel="stylesheet"> -->
+    <link href="css/bootstrap_journal_long.css" rel="stylesheet">
+    <link href="css/stevick_projects.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" 
+      type="image/jpg" 
+      href="favicon.JPG">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- [if lt IE 9]> -->
+      <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    <!-- <![endif] -->
+
+
+  </head>
+
+
+  <body>
+
+    <!-- Entire body container -->
+    <div class="container">
+
+      <!-- page tile -->
+      <div class="page-header">
+          <h1 class = "page-header web-title">Stevick Projects</h1>
+      </div>    
+
+       <!-- Navigation Bar -->     
+      <div > 
+        <nav>
+          <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" id="home-tab">ABOUT</a>
+              </li>
+              <div class="nav-divider"></div>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
+                  <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" id="projects-tab" href="#">HARDWARE</a>
+                    <a class="dropdown-item" href="#">SOFTWARE</a>
+                    <a class="dropdown-item" href="#">MECHANICAL</a>
+                    <a class="dropdown-item" href="#">PAPERS</a>
+                    <a class="dropdown-item" href="#">DIY</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">ALL</a>
+                  </div>
+              </li>
+              <div class="nav-divider"></div>
+              <li class="nav-item">
+                  <a class="nav-link active" href="resume.html" id="example-tab">RESUMÉ</a>
+              </li>
+              <div class="nav-divider"></div>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" id="contact-tab">CONTACT</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+
+      <!-- Add a line -->
+      <hr class="my-4">
+
+      <!-- Contains EDUCATION section of resume -->
+      <div class = "container">
+          <div class="row">
+            
+              <!-- Section title column  -->
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 resume-section">
+                  <h4 class = "red-underline">
+                    EDUCATION
+                  </h4>
+              </div>
+
+              <!-- Education entries column -->
+              <div class = "col-xs-12 col-sm-12 col-md-9 col-lg-9">
+
+                <!-- Michigan Entry -->
+                <div style = " padding-bottom:10px;">
+                  <div class = "jumbotron no-margin">
+                    <p class = "resume-educ-school">
+                      University of Michigan<span style = "font-style:italic;">, Ann Arbor, MI</span>
+                    </p>
+                    <p class = "resume-educ-degree"> 
+                        Master of Science, Mechanical Engineering <span> &nbsp &#8226; &nbsp </span> Fall 2016
+                    </p>
+                    <p class = "resume-educ-notes"> 
+                        Mechanical and Electrical Team in Kasper Space Lab multidisplinary project in association with JPL     
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Claremont McKenna Entry -->
+                <div>
+                  <div class = "jumbotron no-margin">
+                    <p class = "resume-educ-school">
+                      Claremont McKenna College<span style = "font-style:italic;">, Claremont, CA</span>
+                    </p>
+                    <p class = "resume-educ-degree"> 
+                        Bachelor of Arts, Physics & Economics Double Major <span> &nbsp &#8226; &nbsp </span> Spring 2015
+                    </p>
+                    <p class = "resume-educ-notes"> 
+                        Minor (Equivalent Courses) in Engineering at Harvey Mudd College  <br>
+                        NCAA All-American Scholar-Athlete Award, April 2012, 2013, 2014, & 2015  
+                    </p>
+                  </div>
+                </div>
+
+              </div> <!-- end education entries column -->
+
+          </div>
+      </div> <!-- Ends EDUCATION section-->
+
+
+      <!-- Add a line -->
+      <hr class="my-4">
+
+
+      <!-- Contains WORK section of resume -->
+      <div class = "container">
+          <div class="row">
+            
+              <!-- Section title column  -->
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 resume-section">
+                  <h4 class = "red-underline">
+                    WORK
+                  </h4>
+              </div>
+
+              <!-- Work entries column -->
+              <div class = "col-xs-12 col-sm-12 col-md-9 col-lg-9 no-margin">
+
+                <!-- Clarity Entry -->
+                <div style = " padding-bottom:10px;">
+                  <div class = "jumbotron no-margin">
+                    <p class = "resume-work-company">
+                        Clarity Movement<span style = "font-style:italic;">, Berkeley, CA</span>
+                    </p>
+                    <p class = "resume-work-role"> 
+                        Hardware Test Engineer <span> &nbsp | &nbsp </span> Spring 2018 - Fall 2019
+                    </p>
+                    <p class = "resume-work-function"> 
+                        Research and develop hardware of Clarity Node - wireless, weather proof, multi-sensor air-quality monitor
+                    </p>
+                    <ul class = "resume-work-items">
+                      <li>
+                          Build and maintain software and hardware of Clarity's testing tools and setups
+                      </li>
+                      <li>
+                          Design experiments and testing setups to debug and solve issues, validate functionality, and improve data accuracy through hardware and firmware implementation
+                      </li>
+                      <li>
+                          Work with manufacturing and internal operations to implement efficient and automated systems for in-factory and interal processes
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Clarity Entry 2 -->
+                <div style = " padding-bottom:10px;">
+                    <div class = "jumbotron no-margin">
+                      <p class = "resume-work-company">
+                          Clarity Movement<span style = "font-style:italic;">, Berkeley, CA</span>
+                      </p>
+                      <p class = "resume-work-role"> 
+                          Hardware R&D Engineer <span> &nbsp | &nbsp </span> Spring 2018 - Fall 2019
+                      </p>
+                      <p class = "resume-work-function"> 
+                          Research and develop hardware of Clarity Node - wireless, weather proof, multi-sensor air-quality monitor
+                      </p>
+                      <ul class = "resume-work-items">
+                        <li>
+                            Lead experimental design, manufacturing, and procedure of life-time analysis of multiple sensors
+                        </li>
+                        <li>
+                            Prototype next generation sensor and perform tests for proof of concept, component selection, and design optimization
+                        </li>
+                        <li>
+                            Collect, analyze, and vizualize collected data (Python) for weekly presentations to clients 
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+
+                <!-- Kasper Space Lab Entry-->
+                <div style = " padding-bottom:10px;">
+                    <div class = "jumbotron no-margin">
+                      <p class = "resume-work-company">
+                          Kasper Space Lab<span style = "font-style:italic;">, Ann Arbor, MI</span>
+                      </p>
+                      <p class = "resume-work-role"> 
+                          Space Launch Instrumentation Team Member <span> &nbsp | &nbsp </span> Spring 2016 - Fall 2016
+                      </p>
+                      <p class = "resume-work-function"> 
+                          Developed sensor instrumentation and data analysis for measuring charged particles for NASA's mission to Jovian moon Europa
+                      </p>
+                      <ul class = "resume-work-items">
+                        <li>
+                            Designed real-time imaging system to calibrate high-flux particel accelerators used in testing Europa instruments
+                        </li>
+                        <li>
+                            Modeled and designed method for measuring bandwidth of particle speeds from particle decelerator
+                        </li>
+                        <li>
+                            PCB Design Team: Design, simulated, and tested cicuit board using Altium, TI Webench, and CadSoft EAGLE
+                        </li>
+                        <li>
+                            Mechanical Design Team: Designed, CADed, and manufactured sensor housing, suppressor grid, and support structure
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+              
+
+              </div> <!-- end work entries column -->
+
+          </div>
+      </div> <!-- Ends EDUCATION section-->
+
+
+
+
+
+  </body>
+</html>
+

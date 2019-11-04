@@ -1,3 +1,178 @@
+/**********************/
+/* ALL PAGES */
+/**********************/
+.web-title{
+  text-align:center;
+  font-size:50px;
+  padding-top:25px;
+  padding-bottom:10px;
+}
+
+/* Add hover function to dropdown menu */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/**********************/
+
+
+
+/**********************/
+/* HOME PAGE: ABOUT */
+/**********************/
+.home-name{
+  text-align:center;
+  font-size:45px;
+  padding-bottom: 30px;
+}
+
+.home-elements{
+  padding-top:15px; 
+  padding-bottom:30px;
+}
+
+.block-center{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.home-text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  font-size:20px;
+}
+
+.home-image{
+  padding-bottom: 1px;
+  display: block;
+  width: 60%;
+  height: auto;
+  border-radius: 1.25rem;
+}
+/**********************/
+
+
+
+/**********************/
+/* CONTACT PAGE */
+/**********************/
+.contact-my-name{
+  font-size:40px; 
+  padding-bottom: 35px; 
+  text-align: left;
+}
+
+.contact-field{
+  color: #e22620; 
+  text-align: left;
+}
+
+.contact-info{
+  padding-top: 5px; 
+  padding-bottom: 30px; 
+  text-align: left;
+}
+/**********************/
+
+
+
+/**********************/
+/* RESUME PAGE */
+/**********************/
+.resume-section{
+  padding-top: 25px; 
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 30px;
+  text-align: right;
+}
+
+.red-underline{
+  border-bottom: 2px solid #e22620;
+  padding-bottom:3px;
+}
+
+.resume-educ-school{
+  font-size:25px; 
+  padding-bottom: 3px; 
+  text-align: left; 
+  margin:0;
+}
+
+.resume-educ-degree{
+  color: #4d4d4d; 
+  font-size:17px; 
+  padding-bottom: 8px; 
+  text-align: left; 
+  /* font-style:italic;  */
+  margin:0;
+}
+
+.resume-educ-notes{
+  color: #4d4d4d; 
+  font-size:15px; 
+  padding-bottom: 5px; 
+  text-align: left; 
+  font-style:italic;
+  margin:0;
+}
+
+.no-margin{
+  margin:0;
+}
+
+.resume-work-company{
+  font-size:25px; 
+  padding-bottom: 7px; 
+  text-align: left; 
+  margin:0;
+}
+
+.resume-work-role{
+  color: #4d4d4d; 
+  font-size:17px; 
+  padding-bottom: 1px; 
+  text-align: left; 
+  font-style:italic; 
+  margin:0;
+}
+
+.resume-work-function{
+  color: #4d4d4d; 
+  font-size:15px; 
+  padding-bottom: 10px; 
+  text-align: left; 
+  margin:0;
+}
+
+.resume-work-items{
+  color: #4d4d4d; 
+  font-size:15px; 
+  padding-bottom: 5px; 
+  text-align: left; 
+  margin:0;
+}
+/**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .crop-img{
   max-height:150px;
   max-width:100%;
@@ -36,38 +211,6 @@
   color: #e22620;
 }
 
-.block-center{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.home-text{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: left;
-}
-
-
-.home-image{
-  padding-bottom: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
-  width: 60%;
-  height: auto;
-  border-radius: 1.25rem;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -98,6 +241,9 @@
   height:auto;
   display:inline-block;
 }
+
+
+
 
 /* 
  * uncomment this for some css3 drop shadows and rounded corners.
