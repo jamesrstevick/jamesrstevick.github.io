@@ -8,15 +8,15 @@
 var one_project_template, projects_template;
 
 // Helper functions to instantiate templates and display in content sections
-function showProjects(template, data){
+function showProjects(template, data, subject){
 	var html = template(data);
 	$('#projects-content').html(html);
 }
 
-// function showOneProject(template, data){
-// 	var html = template(data);
-// 	$('#projects-one-content').html(html);
-// }
+function showOneProject(template, data){
+	var html = template(data);
+	$('#projects-one-content').html(html);
+}
 
 // Run code when whole document is ready
 $(document).ready(function(){
@@ -28,24 +28,42 @@ $(document).ready(function(){
 	// source = $("#one-project-template").html();
 	// one_project_template = Handlebars.compile(source);
 
- 
-	//	Clicking on 
-	//  clicking on the albums tab shows the 
-	$("#hardware-project-tab").click(function () {
 
-		// Display the 
-		showProjects(projects_template, portfolio);
+	// Function when any tab is clicked
+	$(".nav-tabs").click(function (event) {
 
-		// make the albums tab the active one
-		// first make the currently active tab inactive
-		$(".nav-pills .active").removeClass("active");
-		// then make albums tab active
-		$("#hardware-project-tab").addClass("active");
+		// Get ID of tab clicked on
+		var tab_clicked = event.target.id;
+
+		// Display the projects according to the tab selected 
+		showProjects(projects_template, portfolio, tab_clicked);
+
+		// Switch Active class to correct tab
+		$(".nav-tabs .active").removeClass("active");
+		$("#"+tab_clicked).addClass("active");
+
+		// Function when project thumbnail is clicked on
+		$(".project-thumbnail").click(function (){
+			// Get the index of the project just clicked on
+			var index = $(this).data("id");
+			// Remove project tabs and fill in column with all 12 blocks of Bootstrap grid
+			document.getElementById("project-nav-tabs").remove();
+			$("#projects-content-column").addClass("col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12");
+			
+			// $( "#projects-content").html( "htmlFiles/MagLev.html" );
+			$("#projects-content").load("jamesrstevick.github.io/htmlFiles/MagLev.html");
+			// displays the single photo template
+			// $("#projects-content").load("htmlFiles/MagLev.html");
+			// portfolio["projects"][index]["htmlFile"]
+			//   $.get("htmlFiles/MagLev.html", function(html_string){
+			// 	  console.log(html_string); },'html');  
+			
+
+		});
 
 	});
 
-	$("#hardware-project-tab").click();
-	// var tab_clicked = $(this).attr('id');
-	// console.log(tab_clicked);
-	// $(tab_clicked).click();
+	// Start page on all projects by simulating click on All Projects tab
+	$("#all_proj").click();
+
 });

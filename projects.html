@@ -4,20 +4,22 @@
   
   <head>
     <!-- Meta data, CSS files, and JS files -->
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>James Stevick</title>
 
+    <!-- JavaScript Libraries -->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-3.4.1/bootstrap.js"></script>
     <script src="js/handlebars-v3.0.3.js"></script>
     
+    <!-- My JavaScript Libraries -->
     <script src="js/Projects.js"> </script>
     <script src="js/project_manager.js"> </script>
 
+    <!-- CSS Libraries -->
     <!-- <link href="css/bootstrap-3.4.1/bootstrap.css" rel="stylesheet"> -->
     <link href="css/bootstrap_journal_long.css" rel="stylesheet">
     <link href="css/stevick_projects.css" rel="stylesheet">
@@ -26,66 +28,31 @@
     <link rel="icon" 
       type="image/jpg" 
       href="favicon.JPG">
-  
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!-- [if lt IE 9]> -->
-      <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
-    <!-- <![endif] -->
+
   </head>
 
-
+  <!-- Body of Webpage -->
   <body>
 
     <!-- Entire body container -->
     <div class="container">
 
-      <!-- page title -->
-      <div class="page-header">
-        <h1 class = "page-header web-title">Stevick Projects</h1>
-      </div>    
-
-
-      <!-- Collapsed Navbar -->
-      <div class="row">
-        <div class = "col-xs-2 col-sm-1 col-md-1 col-lg-1">
-          <div class="navbar-header">
-            <button
-              type="button"
-              class= "navbar-toggle collapsed"
-              data-toggle = "collapse"
-              data-target = "#main_navbar"
-              aria-expanded = "false">
-              <div class = containter>
-                  <div class = "bars"></div>
-                  <div class = "bars"></div>
-                  <div class = "bars"></div>
-              </div>
-            </button>
-          </div>
-        </div>
-
-        <!-- Navigation Bar -->  
-        <div class = "col-xs-10 col-sm-11 col-md-11 col-lg-11"> 
-          <div id = "main_navbar" class = "collapse navbar-collapse"> 
+        <!-- website title -->
+        <div class="page-header">
+          <h1 class = "page-header web-title">Stevick Projects</h1>
+        </div>    
+  
+         <!-- Navigation Bar -->     
+        <div class="row"> 
+          <div class = "col-3 col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <nav>
               <ul class="nav nav-pills">
                   <li class="nav-item">
                     <a class="nav-link" href="index.html" id="home-tab">ABOUT</a>
                   </li>
                   <div class="nav-divider"></div>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="projects.html" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-                      <div class="dropdown-menu dropdown-content" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-                        <a class="dropdown-item" id="hardware-project-tab" href="projects.html">HARDWARE</a>
-                        <a class="dropdown-item" href="projects.html">SOFTWARE</a>
-                        <a class="dropdown-item" href="projects.html">MECHANICAL</a>
-                        <a class="dropdown-item" href="projects.html">PAPERS</a>
-                        <a class="dropdown-item" href="projects.html">DIY</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="projects.html">ALL</a>
-                      </div>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="projects.html" id="portfolio-tab">PORTFOLIO</a>
                   </li>
                   <div class="nav-divider"></div>
                   <li class="nav-item">
@@ -99,32 +66,62 @@
             </nav>
           </div>
         </div>
+  
+        <!-- Add a line -->
+        <hr class="my-4">
 
-    </div>
+        <!-- Projects page html -->
+        <div class="row"> 
+          <!-- Tab selector type of project -->
+          <div class = "col-11 col-xs-4 col-sm-4 col-md-3 col-lg-2" style="margin-top: 10px;">
+            <ul class="nav nav-tabs flex-column" id = "project-nav-tabs">
+              <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" id="all_proj" href="#">All Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="hw_proj" href="#">Hardware</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="soft_proj" href="#">Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="mech_proj" href="#">Mechanical</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" id="diy_proj" href="#">DIY</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" id="pap_proj" href="#">Papers</a>
+              </li>
+            </ul>
+          </div>
 
-      <!-- Add a line -->
-      <hr class="my-4">
+          <!-- Projects page fillable html -->
+          <div class = "col-11 col-xs-8 col-sm-8 col-md-9 col-lg-10" id = "projects-content-column">
+              <div id="projects-content"  class="container-fluid"  role="main"></div>
+          </div>
 
-      <!-- Projects page fillable html -->
-      <div id="projects-content"  class="container-fluid"  role="main">
-      </div>  <!-- / Projects page fillable html -->
+      </div> <!-- / Projects page html -->
 
-      <!-- Templates for projects portfolio -->
+
+      <!-- Templates for projects portfolio using Handlebars Library-->
       <script id="projects-template" type="text/x-handlebars-template">
         <div class="row">
-          {{#each projects}}
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 jumbotron project-entry"> 
-            <div class="project-thumbnail"  data-id="{{@index}}">
-              <img class="project-image" src="{{thumbnail}}" alt=""/> 
+          {{#each projects}} <!-- Loop through each project -->
+          <div class="col-11 col-xs-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 jumbotron project-entry" > 
+            <div class="project-thumbnail" data-id="{{@index}}">
+              <img class="project-image" src="{{thumbnail}}" alt=""> 
               <div>
                   <h3 class ="project-title">{{title}}</h3>
-                  <p style = "text-align: center;">{{description}}</p>
+                  <p class = "project-description">{{description}}</p>
+                  <p class = "project-date">Date: {{date}}</p>
               </div>
             </div>
           </div> <!-- / col -->
           {{/each}}
         </div> <!-- / row -->
       </script>
+
 
     <!-- Add a line -->
     <hr class="my-4">

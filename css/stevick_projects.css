@@ -156,13 +156,69 @@
   text-align: left; 
   margin:0;
 }
+
+.resume-box-separator{
+  padding-bottom:10px;
+}
+
+.resume-computing-type{
+  font-size:25px; 
+  padding-bottom: 5px; 
+  text-align: left; 
+  margin:0;
+}
+
+.resume-computing-items{
+  font-size:17px; 
+  text-align: left; 
+  margin:0;
+}
 /**********************/
 
 
 
 
+/**********************/
+/* PROJECTS PAGE */
+/**********************/
+.project-entry{
+  margin-left: 7px; 
+  margin-right: 7px; 
+  margin-bottom: 7px; 
+  margin-top: 7px;
+}
 
+.project-image{
+  display:block;
+  padding-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto;
+  border-radius: 0.3rem;
+}
 
+.project-title{
+  font-size:22px; 
+  color: #e22620;
+  text-align: center;
+}
+
+.project-description{
+  text-align: left;
+  padding-bottom:10px;
+  margin:0;
+}
+
+.project-date{
+  text-align: left;
+  font-size:15px;
+  color:black; 
+  font-weight:bold;
+  margin:0;
+}
+
+/**********************/
 
 
 
@@ -190,26 +246,10 @@
 
 }
 
-.project-entry{
-  margin-left: 10px; 
-  margin-right: 10px; 
-  margin-bottom: 10px; 
-  margin-top: 10px;
-}
 
-.project-image{
-  display:block;
-  padding-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  height: auto;
-  border-radius: 0.3rem;
-}
 
-.project-title{
-  color: #e22620;
-}
+
+
 
 .center {
   display: block;
