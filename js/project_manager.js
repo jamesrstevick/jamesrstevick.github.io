@@ -51,7 +51,10 @@ $(document).ready(function(){
 			$("#projects-content-column").addClass("col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12");
 			
 			// $( "#projects-content").html( "htmlFiles/MagLev.html" );
-			$("#projects-content").load("jamesrstevick.github.io/htmlFiles/MagLev.html");
+			var webpage = "https://jamesrstevick.github.io/" + portfolio["projects"][index]["htmlFile"];
+			// $("#projects-content").load("jamesrstevick.github.io/htmlFiles/MagLev.html");
+			$("#projects-content").load(webpage);
+
 			// displays the single photo template
 			// $("#projects-content").load("htmlFiles/MagLev.html");
 			// portfolio["projects"][index]["htmlFile"]
