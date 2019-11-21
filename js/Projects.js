@@ -18,7 +18,7 @@ var portfolio = {
             pdfFile : "reports/ImageSegmentation.pdf",
             thumbnail : "images/ImageSegmentation.jpg",
             description : '"Image Segmentation with Dynamic Artifacts Detection and Bias Correction", Published in American Institute of Mathematical Sciences',
-            htmlFile: "htmlFiles/MagLev.html",
+            htmlFile: "htmlFiles/ImageSegmentation.html",
             date: "08/15/2014",
             tags : ["hardware", "DIY", "course projects"]
         },
@@ -27,7 +27,7 @@ var portfolio = {
             pdfFile : "reports/SeniorThesis.pdf",
             thumbnail : "images/SeniorThesis.jpg",
             description : 'Senior Thesis for B.A. in Physics using MATLAB for network theory, "Developing Metrics for Networks Embedded in Physical Space"',
-            htmlFile: "htmlFiles/MagLev.html",
+            htmlFile: "htmlFiles/SeniorThesis.html",
             date: "05/15/2015",
             tags : ["hardware", "DIY", "course projects"]
         },
@@ -36,7 +36,7 @@ var portfolio = {
             pdfFile : "reports/KSLZiggy.pdf",
             thumbnail : "images/KSLZiggy.jpg",
             description: "Mechanical and electrical design of real-time imaging system to calibrate high-flux particle accelerators",
-            htmlFile: "htmlFiles/MagLev.html",
+            htmlFile: "htmlFiles/KSLZiggy.html",
             date: "04/23/2016",
             tags : ["hardware", "DIY", "course projects"]
         }
