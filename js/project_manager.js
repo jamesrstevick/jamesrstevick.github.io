@@ -49,9 +49,9 @@ $(document).ready(function(){
 			var index = $(this).data("id");
 
 			// Remove project tabs and fill in column with all 12 blocks of Bootstrap grid
-			document.getElementById("project-nav-tabs").remove();
-			$("#projects-content-column").addClass("col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12");
-			
+			// document.getElementById("project-nav-tabs").remove();
+			// $("#projects-content-column").addClass("col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12");
+
 			// Load the selected project html file into the projects-content section
 			var webpage = "https://jamesrstevick.github.io/" + portfolio["projects"][index]["htmlFile"];
 			$("#projects-content").load(webpage);	
