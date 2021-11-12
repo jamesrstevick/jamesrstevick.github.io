@@ -8,16 +8,28 @@
   padding-bottom:10px;
 }
 
+.repeat-page-title{
+  font-size:28px; 
+  padding-top: 15px; 
+  padding-bottom: 10px; 
+  text-align: left;
+}
+
 /* Add hover function to dropdown menu */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.link-button{
+  color: #0217A1;
+  text-decoration: underline;
 }
 /**********************/
 
 
 
 /**********************/
-/* HOME PAGE: ABOUT */
+/* HOME PAGE */
 /**********************/
 .home-name{
   text-align:center;
@@ -26,8 +38,9 @@
 }
 
 .home-elements{
-  padding-top:15px; 
-  padding-bottom:30px;
+  padding-top:30px; 
+  padding-bottom:5px;
+  text-align: left;
 }
 
 .block-center{
@@ -38,12 +51,12 @@
 }
 
 .home-text{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: left;
-  font-size:20px;
+  font-size:17px;
 }
 
 .home-image{
@@ -58,8 +71,25 @@
 
 
 /**********************/
-/* CONTACT PAGE */
+/* ABOUT ME PAGE / CONTACT */
 /**********************/
+.blurb-text{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  font-size:17px;
+}
+
+.aboutme-image{
+  margin-bottom: 15px;
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 1.25rem;
+}
+
 .contact-my-name{
   font-size:40px; 
   padding-bottom: 35px; 
@@ -67,15 +97,32 @@
 }
 
 .contact-field{
+  margin:0px;
+  padding-top:5px; 
   color: #e22620; 
   text-align: left;
+  font-size:17px;
+  font-weight:bold;
 }
 
 .contact-info{
-  padding-top: 5px; 
-  padding-bottom: 30px; 
+  margin:0px;
+  /* padding-top: 5px;  */
+  padding-bottom: 25px; 
   text-align: left;
+  font-size:15px;
 }
+
+.form-group{
+  margin-bottom:10px;
+}
+
+.control-label{
+  margin-bottom:4px;
+  color: #e22620;
+  font-weight:bold;
+}
+
 /**********************/
 
 
@@ -218,9 +265,13 @@
   margin:0;
 }
 
+.project-nav{
+  border-right-style:solid;
+  border-right-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.1);
+}
+
 /**********************/
-
-
 
 
 
@@ -245,9 +296,6 @@
     max-width:100%;
 
 }
-
-
-
 
 
 
