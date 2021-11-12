@@ -19,6 +19,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.link-button{
+  color: #0217A1;
+  text-decoration: underline;
+}
 /**********************/
 
 
@@ -33,8 +38,9 @@
 }
 
 .home-elements{
-  padding-top:15px; 
-  padding-bottom:30px;
+  padding-top:30px; 
+  padding-bottom:5px;
+  text-align: left;
 }
 
 .block-center{
@@ -45,12 +51,12 @@
 }
 
 .home-text{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: left;
-  font-size:20px;
+  font-size:17px;
 }
 
 .home-image{
@@ -257,6 +263,12 @@
   color:black; 
   font-weight:bold;
   margin:0;
+}
+
+.project-nav{
+  border-right-style:solid;
+  border-right-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.1);
 }
 
 /**********************/
